@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="css/app.css" />
+		<style>
+			html,
+			body {
+				background-color: #efeff4;
+			}
+			
+			h5 {
+				padding-top: 8px;
+				padding-bottom: 8px;
+				text-indent: 12px;
+			}
+			
+			.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body {
+				font-size: 15px;
+				margin-top: 8px;
+				color: #333;
+			}
+			
+			.title {
+				margin: 20px 15px 10px;
+				color: #6d6d72;
+				font-size: 15px;
+			}
+			
+			.div_tuijian {
+				padding: 10px 5px 5px;
+				background-color: white;
+			}
+			
+			.div_tuijian_prespan {
+				font-size: 0.9rem;
+				padding-left: 10px;
+				background-image: url(images/biaotizhuangshi.png);
+				background-position: -5px 0px;
+			}
+			
+			.div_tuijian_bespan {
+				font-size: 0.8rem;
+				color: #2b2b2d;
+				margin-right: .4rem;
+			}
+			
+			.div_tuijian_bespan_img {
+				width: 0.7rem;
+				margin-left: 3px;
+				padding-top: 3px;
+			}
+			.mui-table-view .mui-grid-view .mui-table-view-cell .mui-media .mui-col-xs-6 .film-title {
+				color: #333333;
+				font-size: 0.8rem;
+				font-weight: bold;
+				text-align: left;
+			}
+			.mui-table-view .mui-grid-view .mui-table-view-cell .mui-media .mui-col-xs-6 .film-desc {
+				color: #999999;
+				font-size: 0.8rem;
+				text-align: left;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">下方悬浮标题</h1>
+		</header>
+		<div class="mui-content">
+			<div id="slider" class="mui-slider">
+				<div class="mui-slider-group mui-slider-loop">
+					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="images/yuantiao.jpg">
+							<p class="mui-slider-title">静静看这世界</p>
+						</a>
+					</div>
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="images/shuijiao.jpg">
+							<p class="mui-slider-title">幸福就是可以一起睡觉</p>
+						</a>
+					</div>
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="images/muwu.jpg">
+							<p class="mui-slider-title">想要一间这样的木屋，静静的喝咖啡</p>
+						</a>
+					</div>
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="images/cbd.jpg">
+							<p class="mui-slider-title">Color of SIP CBD</p>
+						</a>
+					</div>
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="images/yuantiao.jpg">
+							<p class="mui-slider-title">静静看这世界</p>
+						</a>
+					</div>
+					<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="images/shuijiao.jpg">
+							<p class="mui-slider-title">幸福就是可以一起睡觉吗？</p>
+						</a>
+					</div>
+				</div>
+				<div class="mui-slider-indicator mui-text-right">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+				</div>
+			</div>
+			<div class="div_tuijian">
+				<span class="div_tuijian_prespan">推荐活动 </span>
+				<!--<span id="moreActive" class="div_tuijian_bespan mui-pull-right">更多<img src="images/youshuangjiantou.png" class="div_tuijian_bespan_img"/> </span>-->
+			</div>
+			<div>
+				<ul class="mui-table-view mui-grid-view">
+					<li class="mui-table-view-cell mui-media mui-col-xs-6">
+						<a href="test-pay.html" >
+							<img class="mui-media-object" src="images/shuijiao.jpg">
+							<div class="mui-media-body" style="color: #333333;font-size: 0.8rem;font-weight: bold;text-align: left;">幸福草</div>
+							<div class="mui-media-body" style="color: #999999;font-size: 0.7rem;text-align: left;">幸福就是可以一起睡觉ggggg</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-6">
+						<a href="#">
+							<img class="mui-media-object" src="images/muwu.jpg">
+							<div class="mui-media-body" style="color: #333333;font-size: 0.8rem;font-weight: bold;text-align: left;">幸福草</div>
+							<div class="mui-media-body" style="color: #999999;font-size: 0.7rem;text-align: left;">幸福就是可以一起睡觉ggggg</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="div_tuijian">
+				<span class="div_tuijian_prespan">栏目一 </span>
+				<span id="moreActive" class="div_tuijian_bespan mui-pull-right">更多<img src="images/youshuangjiantou.png" class="div_tuijian_bespan_img"/> </span>
+			</div>
+			<div>
+				<ul class="mui-table-view mui-grid-view">
+					<li class="mui-table-view-cell mui-media mui-col-xs-6">
+						<a href="#">
+							<img class="mui-media-object" src="images/shuijiao.jpg">
+							<div class="mui-media-body" style="color: #333333;font-size: 0.8rem;font-weight: bold;text-align: left;">幸福草</div>
+							<div class="mui-media-body" style="color: #999999;font-size: 0.7rem;text-align: left;">幸福就是可以一起睡觉ggggg</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-6">
+						<a href="#">
+							<img class="mui-media-object" src="images/muwu.jpg">
+							<div class="mui-media-body" style="color: #333333;font-size: 0.8rem;font-weight: bold;text-align: left;">幸福草</div>
+							<div class="mui-media-body" style="color: #999999;font-size: 0.7rem;text-align: left;">幸福就是可以一起睡觉ggggg</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="div_tuijian">
+				<span class="div_tuijian_prespan">栏目二 </span>
+				<span id="moreActive" class="div_tuijian_bespan mui-pull-right">更多<img src="images/youshuangjiantou.png" class="div_tuijian_bespan_img"/> </span>
+			</div>
+			<div>
+				<ul class="mui-table-view mui-grid-view">
+					<li class="mui-table-view-cell mui-media mui-col-xs-6">
+						<a href="#">
+							<img class="mui-media-object" src="images/shuijiao.jpg">
+							<div class="mui-media-body" style="color: #333333;font-size: 0.8rem;font-weight: bold;text-align: left;">幸福草</div>
+							<div class="mui-media-body" style="color: #999999;font-size: 0.7rem;text-align: left;">幸福就是可以一起睡觉ggggg</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-6">
+						<a href="#">
+							<img class="mui-media-object" src="images/muwu.jpg">
+							<div class="mui-media-body" style="color: #333333;font-size: 0.8rem;font-weight: bold;text-align: left;">幸福草</div>
+							<div class="mui-media-body" style="color: #999999;font-size: 0.7rem;text-align: left;">幸福就是可以一起睡觉ggggg</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="div_tuijian">
+				<span class="div_tuijian_prespan">栏目三 </span>
+				<span id="moreActive" class="div_tuijian_bespan mui-pull-right">更多<img src="images/youshuangjiantou.png" class="div_tuijian_bespan_img"/> </span>
+			</div>
+			<div>
+				<ul class="mui-table-view mui-grid-view">
+					<li class="mui-table-view-cell mui-media mui-col-xs-6">
+						<a href="#">
+							<img class="mui-media-object" src="images/shuijiao.jpg">
+							<div class="mui-media-body" style="color: #333333;font-size: 0.8rem;font-weight: bold;text-align: left;">幸福草</div>
+							<div class="mui-media-body" style="color: #999999;font-size: 0.7rem;text-align: left;">幸福就是可以一起睡觉ggggg</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-6">
+						<a href="#">
+							<img class="mui-media-object" src="images/muwu.jpg">
+							<div class="mui-media-body" style="color: #333333;font-size: 0.8rem;font-weight: bold;text-align: left;">幸福草</div>
+							<div class="mui-media-body" style="color: #999999;font-size: 0.7rem;text-align: left;">幸福就是可以一起睡觉ggggg</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="div_tuijian">
+				<span class="div_tuijian_prespan">栏目四</span>
+				<span id="moreActive" class="div_tuijian_bespan mui-pull-right">更多<img src="images/youshuangjiantou.png" class="div_tuijian_bespan_img"/> </span>
+			</div>
+			<div>
+				<ul class="mui-table-view mui-grid-view">
+					<li class="mui-table-view-cell mui-media mui-col-xs-6">
+						<a href="#">
+							<img class="mui-media-object" src="images/shuijiao.jpg">
+							<div class="mui-media-body" style="color: #333333;font-size: 0.8rem;font-weight: bold;text-align: left;">幸福草</div>
+							<div class="mui-media-body" style="color: #999999;font-size: 0.7rem;text-align: left;">幸福就是可以一起睡觉ggggg</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-6">
+						<a href="#">
+							<img class="mui-media-object" src="images/muwu.jpg">
+							<div class="mui-media-body" style="color: #333333;font-size: 0.8rem;font-weight: bold;text-align: left;">幸福草</div>
+							<div class="mui-media-body" style="color: #999999;font-size: 0.7rem;text-align: left;">幸福就是可以一起睡觉ggggg</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script src="js/mui.min.js"></script>
+	<script src="js/open.js"></script>
+	<script src="js/app.js"></script>
+	<script>
+		mui.init({
+			swipeBack: true //启用右滑关闭功能
+		});
+		var slider = mui("#slider");
+		slider.slider({
+			interval: 3000
+		});
+	</script>
+
+</html>

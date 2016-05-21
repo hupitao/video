@@ -1,0 +1,50 @@
+{
+	"tab-webview-subpage-about.html": {
+		"resources": [
+			"images/cbd.jpg",
+			"images/youshuangjiantou.png",
+			"images/muwu.jpg",
+			"images/yuantiao.jpg",
+			"css/app.css",
+			"images/biaotizhuangshi.png",
+			"images/shuijiao.jpg",
+			"js/app.js",
+			"js/open.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"webview_float.html",
+			"test-pay.html"
+		]
+	},
+	"index.html": {
+		"resources": [
+			"tab-webview-subpage-about.html",
+			"js/app.js",
+			"js/common.js",
+			"js/open.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"tab-webview-subpage-about.html",
+			"tab-webview-subpage-setting.html",
+			"tab-webview-subpage-contact.html"
+		]
+	},
+	"webview_float.html": {
+		"resources": [
+			"images/close.png",
+			"css/common.css"
+		]
+	},
+	"test-pay.html": {
+		"resources": [
+			"js/jquery-1.4.2.min.js",
+			"css/index.css"
+		]
+	}
+}
